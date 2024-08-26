@@ -1,0 +1,1 @@
+UNLOAD (SELECT DevEUI, measure_name, time, measure_value::varchar FROM LoRaWAN_Sensors.Sensor_Data TO 's3://mscprojectcsv/new/' WITH (format = 'CSV'))
